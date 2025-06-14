@@ -1,0 +1,15 @@
+.pagi {
+    display: flex;
+    gap: 25px;
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 0 2px 0 gray;
+  }
+  .pagi div {
+    display: flex;
+    align-items: center;
+  }

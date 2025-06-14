@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #F5F6FA;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.on-verification,
+.badly,
+.good {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.input-search {  
+  width: 300px; 
+  display: flex;
+}
+
+.tableTitle {
+  font-weight: 500;
+  letter-spacing: 1px;  
+  font-size: 14px;
+  text-align: right;
+}
+
+.top-line {
+  display: flex;
+  gap: 10px;
+}
+
+.snackbar {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+  top: 0px;
+  left: 0px;
+  background-color: rgb(20, 40, 60, 0.7);
+  box-shadow: 0 0 3px 0 gray;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;  
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;  
+
+  cursor: pointer;
+}
+.snackbar.show {
+  opacity: 1;
+  transition: opacity 0.3s;  
 }

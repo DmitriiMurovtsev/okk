@@ -1,0 +1,43 @@
+.loading {
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    position: relative;    
+    
+    width: 14px;
+    height: 14px;    
+  
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    border-top-color: #0C6638;
+    animation: spin 1s infinite linear;
+}
+ 
+.loadsuccess::after {
+    content: '\2714';    
+    color: green;
+}
+
+.loaderror::after {
+    content: '\2718';
+    color: red;
+}
+
+.mini {
+    scale: 0.7;
+}
+
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+    }
+100% {
+    transform: rotate(360deg);
+    }
+}

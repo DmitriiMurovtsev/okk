@@ -1,0 +1,106 @@
+.input {
+    /* height: 30px; */
+    display: flex;   
+    position: relative;
+    /* width: fit-content; */
+    flex-grow: 1;
+}
+.input input:hover {
+    border: 1px solid #0C6638;
+}
+
+.input img {
+    display: none;
+}
+
+.input input {           
+    /* height: 28px;   */
+    flex: 1;        
+    font-size: 14px;
+    border-radius: 3px;    
+    border: 1px solid #D8D8D8;
+    outline: none;    
+    padding: 20px 0 5px 7px;
+}
+
+.input input:valid,
+.input input:focus {
+    border: 1px solid #0C6638;    
+}
+
+.input label {
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    color: rgb(173, 173, 173);
+    font-size: 14px;
+    transition: top 0.2s ease, font-size 0.2s ease, left 0.2s ease, color 0.2s ease;
+    user-select: none;
+}
+.input label:hover {
+    cursor: text;
+}
+
+.input input:valid ~ label,
+.input input:focus ~ label {
+    top: 2px;
+    font-size: 10px;    
+    left: 8px;
+    transition: top 0.2s ease, font-size 0.2s ease, left 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+    color: #0C6638;
+    letter-spacing: 0.5px;
+}
+
+.input .searchImg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
+.input .pushClick,
+.input .removeClick {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    cursor: pointer;
+}
+.input .pushClick:active,
+.input .removeClick:active {
+    top: 11px;
+}
+
+.input input:valid ~ .searchImg,
+.input input:focus ~ .searchImg {
+    display: none;
+}
+
+.required {
+    color: red;    
+    margin-right: 2px;
+}
+
+.errorText {
+    position: absolute;
+    top: 2px;
+    font-size: 10px;    
+    right: 8px;
+    font-weight: 500;
+    color: red;
+    letter-spacing: 0.5px;
+}
+
+.input.errorInput input {
+    border: 1px solid red;
+}
+.input.disabled input {
+    border: 1px solid grey;
+}
+.input.disabled input ~ label {
+    color: gray;
+}

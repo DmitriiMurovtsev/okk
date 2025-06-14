@@ -1,0 +1,103 @@
+.select {
+    position: relative;
+    /* height: 36px;   */
+    flex: 1;        
+    font-size: 14px;
+    border-radius: 3px;    
+    border: 1px solid #D8D8D8;
+    outline: none;    
+    padding: 21px 8px 20px 8px;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;   
+}
+.select:hover {
+    border: 1px solid #0C6638;
+}
+
+.select img,
+.select img:active {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    width: 20px;
+    height: 10px;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease; 
+}
+
+.select.focus {
+    border: 1px solid #0C6638;
+}
+
+img.focus {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease; 
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    background-color: white;
+    top: 40px;  
+    left: -1px;  
+    height: 200px;   
+    overflow-x: hidden; 
+    overflow-y: auto;
+    border: 1px solid #D8D8D8;
+    z-index: 5;
+    display: none;
+}
+
+.active {
+    display: block;    
+}
+
+.option {
+    padding: 3px 0 3px 8px;
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: #0C6638;
+    color: white;
+}
+
+.label {
+    position: absolute;
+    color: rgb(173, 173, 173);
+    font-size: 14px;
+    top: 10px;
+    left: 8px;
+    border-bottom: 1px solid white;
+    transition: top 0.2s ease, font-size 0.2s ease, left 0.2s ease, color 0.2s ease;    
+}
+.labelTarget {
+    top: 0px;
+    font-size: 10px;    
+    left: 8px;
+    transition: none;
+    color: #0C6638;
+    font-weight: 500;
+    letter-spacing: 0.5px;    
+}
+
+.target {
+    position: absolute;
+    bottom: 5px;    
+    width: 85%;
+
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.required {
+    color: red;    
+    margin-right: 2px;     
+    width: fit-content;   
+}

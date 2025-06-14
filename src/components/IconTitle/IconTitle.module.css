@@ -1,0 +1,30 @@
+img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+img:active {
+    position: relative;
+    top: 1px;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+}
+
+.title {
+    background-color: rgb(253, 248, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 gray;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 2;
+    text-wrap: nowrap;
+    top: 35px;
+}

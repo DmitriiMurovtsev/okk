@@ -1,0 +1,90 @@
+.line {
+    display: flex;
+    padding: 5px 10px;
+    gap: 5px;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 0 2px 0 rgb(150, 150, 150);
+}
+
+.company,
+.type,
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;    
+}
+
+.contactPerson {
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(150, 150, 150);
+}
+
+.name {
+    width: 300px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.company {
+    width: 200px;
+}
+
+.channel {
+    /* font-size: 12px; */
+    color: rgb(150, 150, 150);
+}
+
+.type {
+    width: 180px;
+    text-wrap: nowrap;
+}
+
+.typeName {
+    /* font-size: 12px; */
+    color: rgb(150, 150, 150);
+}
+
+.date {
+    width: 100px;
+}
+
+.manager {
+    width: 200px;
+}
+
+.status {
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 12px ;
+    width: 120px;
+}
+
+.good {
+    /* color: green; */
+    box-shadow: 0 0 3px 0 green;
+}
+.good .status {
+    color: green;
+}
+
+.badly {
+    /* color: red; */
+    box-shadow: 0 0 3px 0 red;
+}
+.badly .status {
+    color: red;
+}
+
+.icons {
+    display: flex;
+    flex-grow: 1;
+    gap: 7px;
+    justify-content: flex-end;
+}
